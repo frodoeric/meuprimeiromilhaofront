@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeService } from './home.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  title = "Home";
+  soma: number = 0;
+
+  constructor(private homeServe: HomeService) { }
 
   ngOnInit() {
+  }
+
+  somar(){
+    this.soma ++;
   }
 
 }
