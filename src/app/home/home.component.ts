@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   title = "Home";
   soma: number = 0;
 
-  constructor(private homeServe: HomeService) { }
+  constructor() { }
 
   ngOnInit() {
   }
