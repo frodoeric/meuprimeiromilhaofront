@@ -11,12 +11,14 @@ export class HomeComponent implements OnInit {
   title = "Home";
   soma: number = 0;
 
-  constructor() { }
+  constructor(private homeService: HomeService) { }
 
   ngOnInit() {
   }
 
   somar(){
+    this.homeService.getGerarMilho().subscribe(x => x, err => console.log(err));
+    
     this.soma ++;
   }
 

@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-const URL_GERAMILHO = "https://localhost:44351/api/GeraMilho";
-const URL_DEPOSITO = "https://localhost:44351/api/Deposito";
+const URL_GERAMILHO = "http://localhost:54224/api/GeraMilho";
+const URL_DEPOSITO = "http://localhost:54224/api/Deposito";
 
 @Injectable({
   providedIn: 'root'

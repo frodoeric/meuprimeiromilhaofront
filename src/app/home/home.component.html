@@ -1,13 +1,39 @@
-<p>home works!</p>
-{{title}}
+<div class="jumbotron text-center">
+    <h1 class="display-6">Produção de milhão</h1>
+    <p></p>
+    <div class="container">
+        <div class="row">
+                <div class="col-sm">
+                    One of three columns
+                </div>
+            <div class="col-sm text-right">
+                <ul style="list-style-type:none;">
+                    <li><label>Milho bom:</label></li>
+                    <li><label>Milho ruim:</label></li>
+                    <li><label>Deposito:</label></li>
+                </ul>
+            </div>
+                <div class="col-sm text-left">
+                <ul style="list-style-type:none;">
+                    <li><input class="retorno"></li>
+                    <li><input class="retorno"></li>
+                    <li><input class="retorno" value="{{soma}}"></li>
+                </ul>
+                </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+        </div>
+    </div>
+</div>      
+        
+<div class="conteiner text-center">
 
-<h2>Todo:</h2>
-<H1>Gerar Milho</H1>
-<button (click)="somar()">Gerar Milho</button>
+    <button type="button" class="btn_gmilho" (click)="somar()"><span>Gerar Milho</span></button>
 
-<p></p>
-<label>Quantidade de milho bom:</label><input>
-<hr>
-<label>Quantidade de milho ruim:</label><input>
-<hr>
-<label>Quantidade total de milho:</label><input value="{{soma}}">
+    <div class="btn-group fixed-bottom" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">PRODUCTION</button>
+        <button type="button" class="btn btn-secondary">SHOP</button>
+        <button type="button" class="btn btn-secondary">STATUS</button>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+.h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.retorno:focus{
+    outline: none;
+}
+
+.btn_gmilho {
+    color: #000000;
+    background-color: #e6e600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100px;
+    height: 100px;
+    border: 0px;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.btn_gmilho span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+  }
+
+.btn_gmilho:focus {
+    outline: none;
+  }
+  
+.btn_gmilho:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+.btn_gmilho:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    margin-left: -20px !important;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+
+.btn_gmilho:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  
+ 
+
