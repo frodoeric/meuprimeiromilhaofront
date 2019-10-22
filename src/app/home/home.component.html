@@ -3,30 +3,32 @@
     <p></p>
     <div class="container">
         <div class="row">
-                <div class="col-sm">
-                    One of three columns
-                </div>
-            <div class="col-sm text-right">
+            <div class="col-sm">
                 <ul style="list-style-type:none;">
                     <li><label>Milho bom:</label></li>
-                    <li><label>Milho ruim:</label></li>
-                    <li><label>Deposito:</label></li>
+                    <li><input class="retorno" value="{{deposito.qtdMilhoBom}}"></li>
                 </ul>
             </div>
-                <div class="col-sm text-left">
-                <ul style="list-style-type:none;">
-                    <li><input class="retorno"></li>
-                    <li><input class="retorno"></li>
-                    <li><input class="retorno" value="{{soma}}"></li>
-                </ul>
-                </div>
+        </div>
+        <div class="row">
             <div class="col-sm">
-                One of three columns
+                <ul style="list-style-type:none;">
+                    <li><label>Milho ruim:</label></li>
+                    <li><input class="retorno" value="{{deposito.qtdMilhoRuim}}"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <ul style="list-style-type:none;">
+                    <li><label>Deposito:</label></li>
+                    <li><input class="retorno" value="{{deposito.qtdTotalMilho}}"></li>
+                </ul>
             </div>
         </div>
     </div>
-</div>      
-        
+</div>
+
 <div class="conteiner text-center">
 
     <button type="button" class="btn_gmilho" (click)="somar()"><span>Gerar Milho</span></button>

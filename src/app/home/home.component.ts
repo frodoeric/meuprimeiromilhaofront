@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeService } from './home.service';
+import { Deposito } from './models/deposito';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ import { HomeService } from './home.service';
 export class HomeComponent implements OnInit {
 
   title = "Home";
-  soma: number = 0;
+  public deposito: Deposito;
 
   constructor(private homeService: HomeService) { }
 
@@ -18,8 +19,8 @@ export class HomeComponent implements OnInit {
 
   somar(){
     this.homeService.getGerarMilho().subscribe(x => x, err => console.log(err));
-    
-    this.soma ++;
+    this.homeService.getDeposito().subscribe(result => this.deposito = result);
+    console.log(this.deposito);
   }
 
 }

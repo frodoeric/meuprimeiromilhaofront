@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Deposito } from './models/deposito';
 
 const URL_GERAMILHO = "http://localhost:54224/api/GeraMilho";
 const URL_DEPOSITO = "http://localhost:54224/api/Deposito";
@@ -16,6 +17,6 @@ export class HomeService {
   }
 
   getDeposito(){
-    return this.http.get(URL_DEPOSITO);
+    return this.http.get<Deposito>(URL_DEPOSITO);
   }
 }
